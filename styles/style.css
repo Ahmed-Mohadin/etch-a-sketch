@@ -1,0 +1,134 @@
+/* core */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Permanent Marker', cursive;
+    min-height: 100%;
+    position: relative;
+}
+body{
+    background-color: #EDEDED;
+    color: #000;
+    margin-bottom: 100px;
+}
+
+/* headder */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+header .title{
+    color: #FF0000;
+    font-size: 3em;
+}
+
+/* main */
+main{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main span{
+    font-size: 5.33em;
+}
+
+/* .display-grids */
+.display-grids{
+    border: solid 3rem #FF0000;
+    border-radius: 0.5rem;
+    width: 35rem;
+    height: 30rem;
+    padding: 0.4rem;
+}
+.display-grids div{
+    border: solid 1px rgb(214, 212, 209);
+    background-color: rgb(247, 255, 251);
+}
+.display-divs div:hover{
+    background-color: rgb(186, 217, 162) !important;
+    border-color: rgb(186, 217, 162) !important;
+}
+
+/* .controls */
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.controls input[type="range"]{
+    width: 11rem;
+    cursor: grab;
+    margin-top: 0.2rem;
+}
+.controls p{
+    font-size: 1.6em;
+}
+
+.controls input[type="color"]{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+.controls .color-mode{
+    padding: 0.5rem 3.5rem;
+}
+
+.controls .rainbow-mode{
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+.controls .darker-mode{
+    padding: 0.5rem 3.3rem;
+    margin-top: 0.2rem;
+}
+
+.controls .erase{
+    padding: 0.5rem 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+.controls .clear{
+    padding: 0.5rem 4.6rem;
+}
+
+.controls button{
+    font-family: 'Permanent Marker', cursive;
+    border: 0.1rem solid #000;
+    border-radius: 0.4rem;
+    color:#000;
+    text-align:center;
+}
+.controls button:hover{
+    cursor: pointer;
+    color:#000000;
+    border-color: transparent;
+    background-color:#FFFFFF;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF0000;
+}
