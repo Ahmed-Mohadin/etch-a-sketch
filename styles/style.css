@@ -156,6 +156,17 @@ footer{
     color: #FF0000;
 }
 
+footer a{
+    text-decoration: none;
+    color: #000;
+    border: solid 0.3rem transparent;
+}
+footer a:hover{
+    color: #FF0000;
+    border-bottom-color: #FF0000;
+}
+
+
 
 /* media queries */
 @media (max-width: 768px){
