@@ -38,9 +38,6 @@ main{
     align-items: center;
     justify-content: space-evenly;
 }
-main span{
-    font-size: 5.33em;
-}
 
 /* .display-grids */
 .display-grids{
@@ -61,6 +58,10 @@ main span{
 }
 
 /* .controls */
+.active{
+    background-color: #333;
+    color: #FFFFFF !important;
+}
 .controls{
     display: flex;
     flex-direction: column;
@@ -141,7 +142,6 @@ main span{
     color:#000000;
     box-shadow: rgba(0, 0, 0, 0.24) 0.4rem 0.4rem 0.4rem;
     border-color: transparent;
-    background-color:#FFFFFF;
 }
 
 /* footer */
@@ -156,3 +156,64 @@ footer{
     color: #FF0000;
 }
 
+
+/* media queries */
+@media (max-width: 768px){
+    /* header */
+    header .title{
+        font-size: 1.9em;
+    }
+    
+    /* .display-grids */
+    .display-grids{
+        width: 28rem;
+        height: 23rem;
+    }
+
+    /* .controls */
+    .controls input[type="range"]{
+        width: 8rem;
+    }
+    .controls label[for="input-range"]{
+        font-size: 1.4em;
+    }
+
+    .controls input[type="color"] {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .controls .btn-color{
+        padding: 0.5rem 1.55rem;
+    }
+
+    .controls .btn-rainbow{
+        padding: 0.5rem 1.1rem;
+    }
+    .controls .btn-darker{
+        padding: 0.5rem 1.4rem;
+    }
+
+    .controls .btn-erase{
+        padding: 0.5rem 2.9rem;
+    }
+    .controls .btn-clear{
+        padding: 0.5rem 2.9rem;
+    }
+}
+
+/* media queries */
+@media (max-width: 500px){
+
+    /* .main */
+    main{
+        flex-direction: column;
+    }
+
+    /* .display-grids */
+    .display-grids{
+        width: 19rem;
+        height: 19rem;
+        margin-bottom: 2rem;
+    }
+}
