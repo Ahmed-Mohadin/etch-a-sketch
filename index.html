@@ -16,22 +16,22 @@
            
         </div>
         <div class="controls">
-            <!-- <div class="grid-size"> -->
-                <p>16x16 </p>
-                <input type="range" minlength="16" maxlength="64">
-            <!-- </div> -->
-            <!-- <div class="pick-color"> -->
-                <input type="color">
-                <button type="button" class="color-mode">Color Mode</button>
-            <!-- </div> -->
-            <!-- <div class="random-color"> -->
-                <button type="button" class="rainbow-mode">Rainbow Mode</button>
-                <button type="button" class="darker-mode">Darker Mode</button>
-            <!-- </div> -->
-            <!-- <div class="erase-clear"> -->
-                <button type="button" class="erase">Erase</button>
-                <button type="button" class="clear">Clear</button>
-            <!-- </div> -->
+            <div class="grid-size">
+                <label for="input-range">16 x 16</label>
+                <input type="range" id="input-range" name="input-range" min="1" max="64" value="16">
+            </div>
+            <div class="pick-color">
+                <input type="color" id="input-color" name="input-color">
+                <button type="button" class="btn-color">Color Mode</button>
+            </div>
+            <div class="random-color">
+                <button type="button" class="btn-rainbow">Rainbow Mode</button>
+                <button type="button" class="btn-darker">Darker Mode</button>
+            </div>
+            <div class="erase-clear">
+                <button type="button" class="btn-erase">Erase</button>
+                <button type="button" class="btn-clear">Clear</button>
+            </div>
         </div>
     </main>
     <footer>
